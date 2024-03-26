@@ -1,0 +1,46 @@
+body {
+        background-color: grey;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+}
+
+.ul-navbar {
+    background-color: crimson;
+    display: flex;
+    justify-content: center
+  }
+
+  .li-navbar {
+    list-style: none;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-size: 30px;
+  }
+
+  .heading {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .galery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px 00000042;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+  }
+  div img:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+  }
