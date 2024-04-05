@@ -26,42 +26,29 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.hero {
+header {
+    background-color: #2b2b2b;
+}
+
+.header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font: unset;
-    color: unset;
-    border: unset;
+.action-button {
+    color: white;
     text-decoration: none;
-
-    width: max-content;
-    height: max-content;
-    padding: 1rem 1.5rem;
-
-    border-radius: 2.5rem;
-    background-color: #ff3d00;
-
-    cursor: pointer;
-    transition: all 100ms ease-in-out;
 }
 
 .ul-navbar {
     display: flex;
-    justify-content: center;
-    background-color: #3d3d3d;
-    border-radius: 1rem;
-    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    gap: 0.25rem;
 }
 
 .li-navbar {
@@ -72,8 +59,8 @@ body {
 .a-navbar {
     color: white;
     text-decoration: none;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
 
     transition: color 400ms;
 }
