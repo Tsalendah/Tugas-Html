@@ -3,30 +3,26 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    font-family: "Roboto Condensed", sans-serif;
 }
 
-
 .ul-navbar {
-background-color: teal;
-display: flex;
-justify-content: center;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
 }
 
 .li-navbar {
-list-style: none;
-padding: 20px;
-margin: 5px;
-color: white;
-font-size: 30px;
+    list-style: none;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-size: 30px;
 }
 
 .heading {
-width: 100%;
-text-align: center;
+    width: 100%;
+    text-align: center;
 }
-
-
 
 .contact-box {
     background: white;
@@ -37,14 +33,13 @@ text-align: center;
     flex-basis: 60%;
     padding: 40px 60px;
     background: white;
-
 }
 
 .contact-right {
     flex-basis: 40%;
     padding: 40px;
     background: blue;
-    color: white ;
+    color: white;
 }
 
 h1 {
@@ -96,7 +91,7 @@ button {
     height: 35px;
     border-radius: 30px;
     margin-top: 20px;
-    box-shadow: 0px 5px 15px rgba(28,0,181,0.3);
+    box-shadow: 0px 5px 15px rgba(28, 0, 181, 0.3);
 }
 
 .contact-left h3 {
