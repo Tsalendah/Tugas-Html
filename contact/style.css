@@ -9,6 +9,8 @@ body {
     background-color: teal;
     display: flex;
     justify-content: center;
+    width:1200px ;
+    padding: 0 auto;
 }
 
 .li-navbar {
