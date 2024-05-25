@@ -22,10 +22,11 @@ if (isset($_SESSION['valid'])) {
 
             include ("../includes/config.php");
             if (isset($_POST['submit'])) {
+                $username = mysqli_real_escape_string($con, $_POST['username']);
                 $email = mysqli_real_escape_string($con, $_POST['email']);
                 $password = mysqli_real_escape_string($con, $_POST['password']);
 
-                $result = mysqli_query($con, "SELECT * FROM users WHERE Email='$email' AND Password='$password' ") or die("Select Error");
+                $result = mysqli_query($con, "SELECT * FROM users WHERE Email='$email' OR Username='$email' AND Password='$password' ") or die("Select Error");
                 $row = mysqli_fetch_assoc($result);
 
                 if (is_array($row) && !empty($row)) {
@@ -49,7 +50,7 @@ if (isset($_SESSION['valid'])) {
                 <header>Login</header>
                 <form action="" method="post">
                     <div class="field input">
-                        <label for="email">Email</label>
+                        <label for="email">Email/Username</label>
                         <input type="text" name="email" id="email" autocomplete="off" required>
                     </div>
 
